@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles/upload.css">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('favicon', filename='logo.png') }}">
+</head>
+<body>
+    <nav class="navbar justify-content-between px-5">
+        <a class="navbar-brand">
+            <img src="/static/images/logo.png" width="35" height="35" alt="" style="margin-right: 5px;">
+            <span>Freddy</span>
+        </a>
+        <span class="navbar-text">
+            <img src="/static/images/profile.png" width="30" height="28" class="d-inline-block align-top" alt="" style="margin-right: 5px;">
+            {{user}}
+        </span>
+    </nav>
+    <h3>
+        Upload your PDF file below 
+    </h3>
+    <div class="container">
+        <div class="drag-area">
+            <div class="icon">
+                <i class="fas fa-images" style="font-size: 50px; color: grey;"></i>
+            </div>
+            <span class="header"> Drag & Drop </span>
+            <span class="header"> or <span class="button"> Browse </span></span>
+            <input type="file" accept="PDF" hidden/>
+            <span class="support"> Supports PDF </span>
+        </div>
+    </div>
+    <script src="/static/scripts/upload.js">   
+    </script>
+</body>
+</html>

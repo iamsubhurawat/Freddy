@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('favicon', filename='logo.png') }}">
+</head>
+<body>
+    <nav class="navbar justify-content-between px-5">
+        <a class="navbar-brand">
+            <img src="/static/images/logo.png" width="35" height="35" alt="" style="margin-right: 5px;">
+            <span style="color: white;">Freddy</span>
+        </a>
+        <form class="form-inline">
+            <button class="btn" id="login-button" type="button" onclick="window.location.href='/login'">Log In</button>
+            <button class="btn" id="signup-button" type="button" onclick="window.location.href='/signup'">Sign Up</button>
+        </form>
+    </nav>
+    <div class="container" >
+        <div class="row">
+            <div class="col" id="col1">
+                <h1>Talk with your own pdf file</h1>
+                <h3>
+                    Freddy is a voice assistant that helps you to talk with any pdf file you upload. You can do question answering with
+                    freddy on the basis of the content of the uploaded pdf file.  
+                </h3>
+            </div>
+            <div class="col" id="col2">
+                <img src="/static/images/main.png" width="100%" height="100%" alt="" style="border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <h1>Try Freddy</h1>
+        <h3>Play around with Freddy to know the information 
+            that your pdf file is containing without even reading the whole pdf file.
+        </h3>
+        <button class="btn" id="signup-today" onclick="window.location.href='/signup'">Sign Up today</button>
+        <h2>Technologies on which Freddy is built.</h2>
+        <div class="row" id="technologies">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Groq</h5>
+                    <p class="card-text">Groq is an LLM used for generating human-like responses for the user query.</p>
+                    <a href="https://console.groq.com/playground" target="_blank" class="card-link">Learn more about Groq</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Deepgram API</h5>
+                    <p class="card-text">Deepgram API is used for transcription and text-to-speech generation purposes.</p>
+                    <a href="https://deepgram.com/" target="_blank" class="card-link">Learn more about Deepgram</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Faiss</h5>
+                    <p class="card-text">Faiss is a vector database used to store the embeddings for the text from the documents.</p>
+                    <a href="https://python.langchain.com/v0.1/docs/integrations/vectorstores/faiss/" target="_blank" class="card-link">Learn more about Faiss</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Langchain</h5>
+                    <p class="card-text">Langchain is a framework used to connect language models with external data sources.</p>
+                    <a href="https://www.langchain.com/" target="_blank" class="card-link">Learn more about Langchain</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Mongodb</h5>
+                    <p class="card-text">Mongodb implemented with flask is used in backend to fetch & store data from the server.</p>
+                    <a href="https://www.mongodb.com/" target="_blank" class="card-link">Learn more about Mongodb</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h6>Services | Policies | FAQs | About</h6>
+        <h6>Copyright &copy; 2024 Freddy</h6>
+    </div>
+</body>
+</html>

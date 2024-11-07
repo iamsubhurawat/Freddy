@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('favicon', filename='logo.png') }}">
+    <link rel="stylesheet" href="static/styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-header">
+            Freddy Console
+        </div>
+        <div id="signup">
+            <a id="signup-link" href="/signup">Need an account ?</a>
+        </div>
+        <hr>
+        <h4>Log in</h4>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                {% for message in messages %}
+                    <li class="warning">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username" style="color: white; font-size: 20px; font-weight: 500;">Username</label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="subhurawat123">
+            </div>
+            <div class="form-group">
+                <label for="password" style="color: white; font-size: 20px; font-weight: 500;">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="submit" class="btn">Log in</button>
+        </form>
+    </div>
+</body>
+</html>

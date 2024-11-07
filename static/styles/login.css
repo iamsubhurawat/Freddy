@@ -1,0 +1,44 @@
+body{
+    background-color: black; 
+    margin-top: 50px;
+}
+.login-header{
+    text-align: center; 
+    font-weight: 700; 
+    font-size: 50px; 
+    color: white; 
+    margin-bottom: 20px;
+}
+.container{
+    width: 30%;
+}
+hr{
+    border-color: rgba(128, 128, 128, 0.552); 
+    height: 2px;
+}
+h4{
+    font-size: 35px; 
+    color: white; 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+}
+#signup-link{
+    color: white; 
+    font-weight: 600;
+}
+.form-control{
+    color: white;
+    background-color: black;
+}
+.btn{
+    margin-top: 40px; 
+    text-align: center; 
+    width: 100%;
+}
+.warning{
+    color: red; 
+    font-weight: 700;
+}
+#signup{
+    text-align: end;
+}

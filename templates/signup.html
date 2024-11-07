@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('favicon', filename='logo.png') }}">
+    <link rel="stylesheet" href="static/styles/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-header">
+            Freddy Console
+        </div>
+        <div id="login">
+            <a id="login-link" href="/login">Already have an account ?</a>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h5>
+                    Talk with Freddy regarding your PDF
+                </h5>
+                <h6>Now the searching for any 
+                    answer is much easier. Just ask freddy whatever you want to know from your pdf.
+                </h6>
+            </div>
+            <div class="col">
+                <h4>Create an account</h4>
+                <form action="/signup" method="post">
+                    <div class="form-group">
+                        <label for="name" style="color: white; font-size: 20px; font-weight: 500;">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Subhu Rawat">
+                    </div>
+                    <div class="form-group">
+                        <label for="username" style="color: white; font-size: 20px; font-weight: 500;">Username</label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="subhurawat123">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" style="color: white; font-size: 20px; font-weight: 500;">Password</label>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

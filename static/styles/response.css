@@ -1,0 +1,80 @@
+.navbar{
+    color: white; 
+    background-color: rgb(44, 44, 44);
+}
+.navbar-brand{
+    margin-left: 100px; 
+    font-weight: 700; 
+    font-size: 30px;
+    color: white;
+}
+.navbar-text{
+    font-weight: 500; 
+    font-size: 18px; 
+    margin-right: 100px;
+    color: white;
+}
+body{
+    background-color: black;
+}
+.container-fluid{
+    margin-top: 100px;
+}
+.text-center{
+    font-weight: 700; 
+    color: white;  
+    margin-bottom: 70px
+}
+#startRecording{
+    background-color: white;
+}
+#stopRecording{
+    background-color: white;
+}
+.card{
+    background-color: rgb(44, 44, 44); 
+    width: fit-content; 
+    border-radius: 50px; 
+    margin: 20px;
+}
+#conversation-container{
+    margin-top: 100px;  
+    display: none;
+}
+.card-title{
+    color: white; 
+    font-size: 30px; 
+    font-weight: 700;
+}
+.card-text{
+    color: white;
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#loader{
+    margin-top: 100px;
+    text-align: center;
+}
+.loading img {
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+} 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+  

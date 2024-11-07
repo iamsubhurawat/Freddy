@@ -1,0 +1,109 @@
+#signup-today{
+    background-color: black; 
+    color: white; 
+    border: 2px solid white; 
+    border-radius: 5px; 
+    font-size: 20px; 
+    margin-bottom: 50px;
+}
+#signup-today:hover {
+    background: rgb(192,24,207);
+    background: linear-gradient(90deg, rgba(192,24,207,1) 0%, rgba(9,9,121,1) 62%, rgba(9,9,121,1) 62%);
+}
+.card{
+    background: rgb(192,24,207);
+    background: linear-gradient(90deg, rgba(192,24,207,1) 0%, rgba(9,9,121,1) 62%, rgba(9,9,121,1) 62%);
+    width: 285.84px;
+    margin: 5px;
+}
+.card-title{
+    color: white;
+    font-weight: 700;
+}
+.card-text{
+    color: white;
+}
+.card-link{
+    color: white;
+    font-weight: 700;
+}
+.card-link:hover{
+    color: rgb(0, 195, 255);
+}
+body{
+    background-color: black;
+}
+.navbar{
+    color: white; 
+    background-color: rgb(44, 44, 44);
+}
+.navbar-brand{
+    margin-left: 100px; 
+    font-weight: 700; 
+    font-size: 30px;
+}
+#login-button{
+    background-color: black; 
+    color: white; 
+    border: 2px solid white; 
+    margin-right: 20px; 
+    border-radius: 5px;
+}
+#signup-button{
+    background-color: white; 
+    margin-right: 100px;
+}
+h6{
+    color: grey; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+#col1{
+    color: white; 
+    margin-top: 70px;
+}
+#col2{
+    color: white; 
+    margin-top: 100px;
+}
+#col1 h1{
+    font-weight: 700; 
+    font-size: 63px; 
+    text-align: center; 
+    padding: 15px;
+}
+#col1 h3{
+    text-align: center; 
+    margin-top: 40px; 
+    font-size: 30px;
+}
+.info{
+    background-color: #101014; 
+    margin-top: 50px; 
+    text-align: center;
+}
+.info h1{
+    text-align: center; 
+    color: white; 
+    padding-top: 50px; 
+    margin-bottom: 25px; 
+    font-weight: 700;
+}
+.info h2{
+    text-align: center; 
+    font-size: 40px; 
+    color: white; 
+    padding: 10px; 
+    margin-bottom: 20px;
+}
+.info h3{
+    text-align: center; 
+    font-size: 20px; 
+    color: white; 
+    padding-bottom: 50px;
+}
+#technologies{
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 40px;
+}
